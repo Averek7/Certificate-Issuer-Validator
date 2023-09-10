@@ -58,7 +58,7 @@ class CertContract extends Contract {
      * @param originalHash
      * @returns {Object}
     */
-    async issue(ctx, certId, personId, certHolderName, certDomain, CertTopic, originalHash){
+    async issue(ctx, certId, personId, certDomain, originalHash){
         console.log('Issue Certificate');
         let msgSender = ctx.clientIdentity.getID();
         let certKey = ctx.stub.createCompositeKey('org.certnet.cert.certificate', [certId + '-' + personId]);
@@ -81,9 +81,7 @@ class CertContract extends Contract {
 
         const cert = {
             certId: certId + '-' + personId,
-            CertTopic: CertTopic,
             personId: personId,
-            certHolderName: certHolderName,
             certDomain: certDomain,
             originalHash: originalHash,
             certIssuer: msgSender,

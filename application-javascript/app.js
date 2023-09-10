@@ -42,10 +42,10 @@ async function main() {
 		const contract = network.getContract('Certificate');
 
 		// const result = await contract.submitTransaction('instantiate');
-		// const result = await contract.submitTransaction('createPerson', 'sdfE56fEf5d2B07f7a48B4a0f41DceBd3', 'Averek', 'abcd@gmail.com', '1264567890');
-		// const result = await contract.submitTransaction('issue', 'sdfE56fEf5d2B07f7a48B4a0f41DceBd3', '0x3C1128b65e09bfD1Ac7C28D6aFbeb4D13', 'Averc', 'Hyper', 'Certificate-of-Applause', 'D2kafms4sdasdklflsAsdff');
+		// const result = await contract.submitTransaction('createPerson', '0xoknfoenoidmnmgoiemgoipemgosedgd', 'bittuuu', 'xy12d@gmail.com', '1264167800');
+		const result = await contract.submitTransaction('issue', '0xoknfoenoidmnmgoiemgoipemgosedgdgh', '0xoknfefsfsdfsdfsfsdfsfsfsfdsdfsdfoenoidmnmgoiemgoipemgosedgd', 'bittttttttuuuu' , 'Cooolnee' , 'JS', 'SsssssssD234klflsAsdff');
 		// const result = await contract.evaluateTransaction('verify', '0x01', '0x0000003421', 'SsD234klflsAsdff');
-		const result = await contract.evaluateTransaction('getPerson', 'sdfE56fEf5d2B07f7a48B4a0f41DceBd3');
+		// const result = await contract.evaluateTransaction('getPerson', '0xoknfoenoidmnmgoiemgoipemgosedgd');
 
 		// Parse the string as JSON
 		console.log(JSON.parse(result.toString()));
