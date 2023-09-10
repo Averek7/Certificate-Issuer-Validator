@@ -1,4 +1,4 @@
-# Smaple Certificate - Issuer & Validator
+# Sample Certificate - Issuer & Validator on Hyperledger
 
 The asset transfer basic sample demonstrates:
 
